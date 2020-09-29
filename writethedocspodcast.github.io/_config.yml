@@ -1,0 +1,53 @@
+title: Write the Docs Podcast
+description: >
+  WTD Podcasts contains both podcasts recorded by members of the Write the Docs community and meetup recordings from any WTD meetup that wants to contribute. Both podcasts and recordings focus on topics related to software documentation and technical writing.
+url: http://podcast.writethedocs.org
+
+host: 127.0.0.1
+port: 4008
+
+exclude:
+  - .idea
+
+permalink: /:year/:month/:day/:title/
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "podcast"
+      comments: true
+
+gems: [jekyll-sitemap, jekyll-mentions, jekyll-redirect-from, jekyll-paginate]
+
+## Values for podcast RSS feed
+
+podcast_subtitle: A discussion podcast based on WTD topics and issues, focused on technical writing and documentation for software products.
+podcast_url: http://podcast.writethedocs.org
+podcast_album_art: http://podcast.writethedocs.org/assets/img/wtdpodcastlogo.png
+podcast_title: Write the Docs Podcast
+podcast_owner: Write the Docs Community
+podcast_email: writethedocspodcast@gmail.com
+podcast_category: Technology
+podcast_subcategory_one: Software How-To
+podcast_subcategory_two: Tech News
+podcast_explicit: "no"
+podcast_author: Write the Docs Community
+podcast_description: Podcasts for the Write the Docs community. Mostly focused on tech comm, tech writing, UX, IA, and more.
+podcast_summary: "Write the Docs is a series of conferences, local meetups, and Slack groups focused on all things related to software documentation. We consider everyone who cares about communication, documentation, and their users to be a member of our community. This can be programmers, tech writers, customer support, marketers, and anyone else who wants people to have great experiences with software. This podcast is focused on topics discussed and debated within this community."

@@ -1,0 +1,15 @@
+section.section {
+  padding-bottom: 70px;
+  border-bottom: 1px solid #E3E4E5;
+  
+  &--last {
+    border-bottom: none;
+  }
+  
+  &__more {
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    color: #909BA3;
+    margin-top: 50px;
+  }
+}

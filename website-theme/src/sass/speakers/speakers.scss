@@ -1,0 +1,113 @@
+.speakers {
+  
+  .well {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    @media (min-width: $screen-md-min) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    div {
+      opacity: 1 !important;
+    }
+  }
+  
+  &__person {
+    figure {
+      text-align: center;
+    }
+    img {
+      max-width: 90px;
+      max-height: 90px;
+      width: 100%;
+      margin-bottom: 30px;
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 0;
+        float: left;
+      }
+    }
+    figcaption {
+      @media (min-width: $screen-md-min) {
+        text-align: left;
+        margin-left: 120px;
+        transform: translateY(40px);
+      }
+    }
+    h5 {
+      font-weight: 700;
+      margin: 0 !important;
+      font-size: 16px !important;
+      margin-bottom: 20px !important;
+    }
+  }
+  
+  &__socials {
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+      float: right;
+    }
+    a {
+      font-size: 15px;
+      padding: 10px;
+      font-family: 'ico-moon';
+      color: #152530 !important;
+      opacity: .2;
+      transition: opacity 200ms ease;
+      &:hover, &:focus {
+        opacity: .6;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  &__clear {
+    margin: 0 !important;
+    height: 16px !important;
+    @media (min-width: $screen-md-min) {
+      clear: both;
+    }
+  }
+  
+  &__date {
+    position: relative;
+    @media (min-width: $screen-md-min) {
+      margin-top: 10px;
+    }
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      content: "";
+      display: block;
+      background-color: $yellow;
+      height: 2px;
+      width: 100%;
+    }
+    time {
+      position: relative;
+      bottom: -2px;
+      z-index: 2;
+      color: $yellow;
+      font-weight: 700 !important;
+      font-size: 11px;
+      text-transform: uppercase;
+      background-color: #fff;
+      padding-right: 20px;
+    }
+  }
+  
+  &__content {
+    h3 {
+      color: #152530 !important;
+      font-weight: 700 !important;
+      margin-bottom: 36px;
+    }
+    
+    p {
+      font-size: 14px;
+      
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.person {
+  padding: 5px;
+  padding-bottom: 35px;
+  height: 270px;  // balanced grid
+  @media (min-width: $screen-md-min) {
+    padding-bottom: 50px;
+  }
+  &__img {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+  }
+  
+  &__name {
+    font-family: "Poppins";
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #152530;
+  }
+  
+  &__socials {
+    a {
+      font-family: 'ico-moon';
+      color: #152530;
+      opacity: .2;
+      padding: 4px;
+      transition: opacity 200ms ease;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #152530;
+        opacity: .5;
+      }
+    }
+  }
+}

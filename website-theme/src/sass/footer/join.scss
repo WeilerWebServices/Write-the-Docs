@@ -1,0 +1,49 @@
+.join {
+  background-color: $yellow-footer;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  font-family: "Roboto Mono";
+  font-weight: 700;
+  
+  &__heading {
+    font-size: 24px;
+    color: #fff;
+    margin: 40px;
+    font-weight: 700;
+  }
+  
+  &__talk, &__ticket {
+    display: block !important;
+    font-weight: 700 !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 200ms ease;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block !important;
+    }
+    &:hover, &:focus {
+      border-color: #fff !important;
+    }
+  }
+  
+  &__talk {
+    &:hover, &:focus {
+      color: #152530 !important;
+      border-color: #152530 !important;
+    }
+  }
+  &__ticket {
+    background-color: #fff !important;
+    color: $yellow-footer !important;
+    &:hover, &:focus {
+      background-color: #152530 !important;
+      border-color: #152530 !important;
+    }
+  }
+  
+  &__paragraph {
+    color: #fff;
+    display: inline-block;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,113 @@
+a {
+  color: #EE6F44;
+}
+
+footer {
+  background-color: #FDEDCC;
+}
+
+.yellow-f {
+  color: #EE6F44;
+}
+
+.yellow-b {
+  background-color: #EE6F44;
+}
+
+.dk-grey-f {
+  color: #30122C;
+}
+
+.dk-grey-b {
+  background-color: #30122C;
+}
+
+.lt-grey-f {
+  color: #FDEDCC;
+}
+
+.lt-grey-b {
+  background-color: #FDEDCC;
+}
+
+/* Yellow theme content section */
+
+.yellow-sec .span8 {
+  background-color: #EE6F44;
+  color: #30122C;
+}
+
+.yellow-sec h1 {
+  background-color: #FDEDCC;
+}
+
+.yellow-sec a, .yellow-sec .btn-link {
+  color: #FDEDCC;
+}
+.yellow-sec form a {
+  color: #08c;
+}
+
+/* Dark Gray theme content section */
+
+.dkgray-sec .span8 {
+  color: #FDEDCC;
+  background-color: #30122C;
+}
+
+.dkgray-sec h1 {
+  background-color: #ee6f44;
+  color: #30122C;
+}
+
+.dkgray-sec h2, .dkgray-sec h3, .dkgray-sec h4 {
+  color: #ffffff;
+}
+
+.dkgray-sec a, .dkgray-sec .btn-link {
+  color: #EE6F44;
+}
+
+
+/* Light Gray theme content section */
+
+.ltgray-sec .span8 {
+  background-color: #fdedcc;
+  color: #30122c;
+}
+
+.ltgray-sec h1 {
+  background-color: #ee6f44;
+  color: #30122C;
+}
+
+.ltgray-sec h2, .ltgray-sec h3, .ltgray-src h4 {
+  color: #000000;
+}
+
+.ltgray-sec a, .dkgray-sec .btn-link {
+  color: #EE6F44;
+}
+
+.speakers img {
+  width: 200px;
+  margin-bottom: 10px;
+  border-top: solid 10px #fdedcc;
+  border-left: solid 10px #fdedcc;
+  border-right: solid 10px #ee6f44;
+  border-bottom: solid 10px #ee6f44;
+
+  max-width: 90%;
+}
+
+.speakers .media-heading {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  margin-left: 5px;
+  color: #fdedcc;
+  font-size: .95em;
+}
+
+.dkgray-sec .media-heading a {
+  color: #fdedcc;
+}

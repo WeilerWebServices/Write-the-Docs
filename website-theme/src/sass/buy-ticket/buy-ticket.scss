@@ -1,0 +1,80 @@
+.buy-ticket {
+  min-height: 120px;
+  background-color: #132530;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (min-width: $screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  &__p {
+    color: #fff;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: block;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &--first {
+      margin-top: 53px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 10px;
+      & > {
+        span {
+          display: block;
+          font-size: 5px;
+          visibility: hidden;
+          @media (min-width: $screen-sm-min) {
+            display: inline-block;
+            visibility: visible;
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    &--line {
+      display: none;
+    }
+  }
+  
+  &__2nd-col {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width: $screen-md-min) {
+      padding-right: 44px;
+    }
+  }
+  
+  &__talk, &__ticket {
+    border-color: $yellow !important;
+    display: block;
+    width: 100%;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    transition: all 200ms ease;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      width: auto;
+    }
+    &:hover, &:focus {
+      border-color: #ffe6aa !important;
+    }
+  }
+  
+  &__ticket {
+    background-color: $yellow !important;
+    color: #132530 !important;
+    &:hover, &:focus {
+      background-color: #ffe6aa !important;
+    }
+  }
+}

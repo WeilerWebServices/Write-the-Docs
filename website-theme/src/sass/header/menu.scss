@@ -1,0 +1,123 @@
+.menu {
+  display: none;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  
+  @media (min-width: $screen-md-min) {
+    max-width: 940px;
+    display: block;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: 1170px;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+  }
+  
+  &__wrapper {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  }
+  
+  &__list {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > * + * {
+      border-left: 1px solid #ECEEF0;
+    }
+  }
+  
+  &__list-item {
+    margin: 0;
+    margin-bottom: 0;
+    flex: auto 1 1;
+    &[data-dropdown] {
+      & > a::after {
+        font-family: 'ico-moon';
+        font-size: 5px;
+        color: #909BA3;
+        content: ' \e908';
+        display: inline-block;
+        vertical-align: 30%;
+      }
+      &:hover > .menu__dropdown {
+        display: block;
+      }
+    }
+    
+    &--first {
+      flex: 60px 0 0;
+      @media (min-width: $screen-lg-min) {
+        flex: 66px 0 0;
+      }
+    }
+    
+    &--active {
+      position: relative;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $color6;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  
+  &__item {
+    text-transform: uppercase;
+    color: #132530;
+    font-size: 12px;
+    padding: 20px;
+    height: 65px;
+    border: 0;
+    width: 100%;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    transition: all 200ms ease;
+    
+    &:hover, &:focus {
+      color: #132530;
+      text-decoration: none;
+      background-color: #F1F4F5;
+    }
+    
+    &--home {
+      font-family: 'ico-moon';
+      font-size: 19px;
+      padding-top: 14px;
+      padding-bottom: 18px;
+    }
+  }
+  
+  &__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    padding-left: 0;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+    font-size: 12px;
+    padding: 10px;
+    
+    a {
+      display: block;
+      padding: 10px;
+      color: #909BA3;
+      transition: color 200ms ease;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #17313F;
+      }
+    }
+  }
+}

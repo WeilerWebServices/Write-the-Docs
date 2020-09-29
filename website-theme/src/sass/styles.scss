@@ -1,0 +1,70 @@
+@import 'fonts';
+@import 'variables';
+
+//vendors
+@import 'bootstrap';
+@import 'bootstrap-css';
+@import '../owl/owl.carousel';
+
+//styles
+@import 'common/container';
+
+@import 'offcanvas/offcanvas';
+@import 'offcanvas/menu-mobile';
+
+@import 'header/header';
+@import 'header/menu';
+@import 'header/mobile-bar';
+@import 'header/home-about';
+
+@import 'main/main';
+@import 'main/main-container';
+
+@import 'section/section';
+@import 'section/subheader';
+@import 'section/schedule-home';
+@import 'section/person';
+
+@import 'contact/contact';
+
+@import 'news/news';
+@import 'news/news-post';
+
+@import 'speakers/speakers';
+@import 'well/well';
+@import 'tabs/tabs';
+
+@import 'timeline/timeline';
+@import 'home/home';
+@import 'buy-ticket/buy-ticket';
+
+@import 'footer/join';
+@import 'footer/footer';
+@import 'footer/copy';
+@import 'footer/instagram';
+@import 'footer/socials';
+
+@import 'button/button';
+
+.mark2 {
+  border: 1px solid gray;
+}
+
+/* Added for new sponsor block */
+
+.sponsor-image {
+	width: auto;
+	max-width: 100%;
+	display: block;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* optional (aligning image to left or right) */
+.sponsor-image-left {
+	margin-left: 0;
+}
+
+.sponsor-image-right {
+	margin-right: 0;
+}

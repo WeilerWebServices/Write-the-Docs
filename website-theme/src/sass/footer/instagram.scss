@@ -1,0 +1,54 @@
+.instagram {
+  &__tile {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #fff;
+      opacity: 0;
+      z-index: 1;
+      transition: ease 600ms opacity;
+    }
+    &:hover, &:focus {
+      &::before {
+        opacity: .2;
+      }
+    }
+    height: 50vw;
+    &--trf {
+      img {
+        transform: translateX(-30%);
+      }
+    }
+    img {
+      min-width: 50vw;
+      max-width: 75vw;
+      min-height: 50vw;
+      max-width: 75vw;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 20vw;
+      img {
+        min-width: 20vw;
+        max-width: 30vw;
+        min-height: 20vw;
+        max-height: 30vw;
+      }
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 14.2857vw;
+      img {
+        min-width: 15vw;
+        max-width: 25vw;
+        min-height: 15vw;
+        max-width: 25vw;
+      }
+    }
+  }
+}

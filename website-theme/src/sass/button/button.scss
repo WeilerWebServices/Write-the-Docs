@@ -1,0 +1,18 @@
+.button {
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  border-width: 2px !important;
+  padding-left: 56px !important;
+  padding-right: 56px !important;
+  padding-top: 21px !important;
+  padding-bottom: 21px !important;
+  
+  &--narrow {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  
+  &:active {
+    box-shadow: none !important;
+  }
+}
